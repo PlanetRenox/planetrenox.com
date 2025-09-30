@@ -7,7 +7,6 @@
 <style>
 :root{--c1:#000;--c2:#666;--c3:#fff}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-@keyframes blink{50%{opacity:0}}
 body{
   background:var(--c1);
   color:var(--c3);
@@ -15,24 +14,8 @@ body{
   min-height:100vh;
   padding:1rem
 }
-.logo{
-  position:fixed;
-  top:1rem;
-  left:1rem;
-  font-size:1rem;
-  color:var(--c3);
-  z-index:10
-}
-.logo span{animation:blink 1s step-end infinite}
-.container{display:flex;gap:2rem;padding-top:3rem}
+.container{display:flex;gap:2rem}
 .sidebar{min-width:200px}
-.sidebar a{
-  display:block;
-  color:var(--c3);
-  text-decoration:none;
-  padding:.5rem 0
-}
-.sidebar a:hover{background:var(--c2);color:var(--c1)}
 main{flex:1}
 h2{margin-bottom:1rem}
 .widget-wrapper{margin-bottom:2rem}
@@ -48,11 +31,8 @@ footer a:hover{background:var(--c2);color:var(--c1)}
 </style>
 </head>
 <body>
-<div class="logo">planetrenox<span>_</span></div>
 <div class="container">
   <aside class="sidebar">
-    <a href="https://lynchmark.com" target="_blank" rel="noopener noreferrer">Lynchmark</a>
-    <a href="https://github.com/planetrenox/inzerosight" target="_blank" rel="noopener noreferrer">inzerosight</a>
   </aside>
   <main>
     <section>
