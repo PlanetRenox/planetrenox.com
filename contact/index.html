@@ -20,7 +20,7 @@
     <section>
       <h2>PGP Public Key</h2>
       <p class="mute">Fingerprint: 4832 173C BE19 C949 9C2D 1B48 2F0E E02D 78B1 03A4</p>
-<pre>
+<pre id="key">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xjMEZYZAoxYJKwYBBAHaRw8BAQdA9OrpTcNc1Vmpl1imA4zVi50LEX2O8Xbk
@@ -36,7 +36,7 @@ VyWCojDLCG8wJ1VCZmgJZ/Sn31prSpZ7dA8M
 =g4h3
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
-      <p><a href="/publickey.asc" download>Download publickey.asc</a></p>
+      <p class="row"><button id="copy" type="button">Copy key</button><a href="/publickey.asc" download>Download publickey.asc</a></p>
     </section>
   </main>
   <footer>
@@ -44,5 +44,12 @@ VyWCojDLCG8wJ1VCZmgJZ/Sn31prSpZ7dA8M
     <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
   </footer>
 </div>
+<script>
+copy.onclick=async()=>{
+  await navigator.clipboard.writeText(key.textContent.trim()+"\n")
+  copy.textContent="Copied!"
+  setTimeout(()=>copy.textContent="Copy key",1500)
+}
+</script>
 </body>
 </html>

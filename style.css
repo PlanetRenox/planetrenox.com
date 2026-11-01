@@ -22,6 +22,9 @@ pre{background:#f6f6fb;border-left:3px solid var(--sky);padding:1rem;margin:1rem
 main a,footer a{color:var(--fg);text-decoration:none}
 main a{color:var(--ink);border-bottom:1px dotted var(--ink)}
 main a:hover,footer a:hover{background:var(--ink);color:var(--bg)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.5rem}
+button{font:inherit;color:var(--bg);background:var(--ink);border:0;padding:.35rem .9rem;cursor:pointer}
+button:hover{background:var(--sun)}
 footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;border-top:2px dotted var(--sky);padding-top:1.5rem}
 ::selection{background:var(--ink);color:var(--bg)}
 @media(max-width:480px){
