@@ -5,47 +5,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Planet Renox</title>
 <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/planetrenox/logo@main/designs/planet-in-progress/versions/tiles/zoom-transparent.svg">
-<style>
-:root{--c1:#fff;--c2:#666;--c3:#000}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--c1);
-  color:var(--c3);
-  font-family:monospace;
-  min-height:100vh;
-  padding:1rem
-}
-.container{display:flex;gap:2rem}
-.sidebar{min-width:200px}
-main{flex:1}
-h2{margin-bottom:1rem}
-.widget-wrapper{margin-bottom:2rem}
-iframe{width:100%;max-width:646px;height:190px;border:0}
-footer{margin-top:2rem}
-footer a{color:var(--c3);text-decoration:none}
-footer a:hover{background:var(--c2);color:var(--c1)}
-::selection{background:var(--c2);color:var(--c1)}
-@media(max-width:768px){
-  .container{flex-direction:column}
-  .sidebar{min-width:auto}
-}
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="container">
-  <aside class="sidebar">
-  </aside>
+<div class="wrap">
+  <header>
+    <img src="https://cdn.jsdelivr.net/gh/planetrenox/logo@main/designs/planet-in-progress/versions/tiles/zoom-transparent.svg" alt="Planet Renox">
+  </header>
   <main>
     <section>
       <h2>Games</h2>
-      <div class="widget-wrapper">
-        <iframe src="https://store.steampowered.com/widget/1745790/"></iframe>
-      </div>
+      <iframe src="https://store.steampowered.com/widget/1745790/" title="City Zoomer on Steam"></iframe>
     </section>
-    <footer>
-      <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
-    </footer>
   </main>
+  <footer>
+    <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
+    <a href="/contact/">&gt; CONTACT</a>
+  </footer>
 </div>
 </body>
 </html>
