@@ -39,11 +39,13 @@ VyWCojDLCG8wJ1VCZmgJZ/Sn31prSpZ7dA8M
       <p class="row"><button id="copy" type="button">Copy key</button><a href="/publickey.asc" download>Download publickey.asc</a></p>
     </section>
   </main>
-  <footer>
-    <a href="/">&gt; HOME</a>
-    <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
-  </footer>
 </div>
+<footer>
+  <span id="prt" title="PRT"></span>
+  <a href="/">&gt; HOME</a>
+  <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
+</footer>
+<script type="module" src="/prt.js"></script>
 <script>
 copy.onclick=async()=>{
   await navigator.clipboard.writeText(key.textContent.trim()+"\n")
