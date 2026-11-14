@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · Planet Renox</title>
+<link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/planetrenox/logo@main/designs/planet-in-progress/versions/tiles/zoom-transparent.svg">
+<link rel="stylesheet" href="/style.css">
+<script data-goatcounter="https://planetrenox.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script async src="https://c.planetrenox.com/c.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="/"><img src="https://cdn.jsdelivr.net/gh/planetrenox/logo@main/designs/planet-in-progress/versions/tiles/zoom-transparent.svg" alt="Planet Renox"></a>
+  </header>
+  <main>
+    <section>
+      <h2>Privacy</h2>
+      <p>No ads, no cookies of mine, nothing sold. This is what gets recorded when you visit planetrenox.com.</p>
+    </section>
+    <section>
+      <h2>Visits</h2>
+      <p>Visits are counted by <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener noreferrer">GoatCounter</a> and by c, a small counter on my own server at c.planetrenox.com. A visit records the page, the page you came from, the time, your IP address, and what your browser says about itself: name and version, system, language, time zone, screen size, touch screen or not.</p>
+      <p>GoatCounter uses the IP address to tell visits apart and to work out the country, and does not store it. c keeps a log of visits, IP addresses included, for 90 days and then deletes it. If your browser blocks GoatCounter, c passes the visit on to it, IP address included, so an ad blocker does not stop the count. This button does, for this browser:</p>
+      <p class="row"><button id="opt" type="button">Don't count my visits</button><span id="said" class="mute"></span></p>
+    </section>
+    <section>
+      <h2>Others who see your request</h2>
+      <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a> hosts this site and shows me visit totals through Cloudflare Web Analytics, which uses no cookies. The logo and the font load from <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank" rel="noopener noreferrer">jsDelivr</a>. The game widget on the home page loads from <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener noreferrer">Steam</a>, which sets a cookie of its own. Each of them sees your IP address and has its own privacy policy.</p>
+    </section>
+    <section>
+      <h2>Your data</h2>
+      <p>Write to <a href="mailto:apophenia@planetrenox.com">apophenia@planetrenox.com</a> to ask what is held about you, or to have it deleted. For the visit log, send your IP address and roughly when you visited: that is all an entry can be looked up by.</p>
+      <p>The count and the log rest on my legitimate interest in knowing how the site is used and keeping it free of abuse. If you are in the EU or the UK you can also complain to your data protection authority.</p>
+      <p class="mute">Last updated November 14, 2026.</p>
+    </section>
+  </main>
+  <footer>
+    <a href="/">&gt; HOME</a>
+    <a href="https://github.com/multipleof4" target="_blank" rel="noopener noreferrer">&gt; GITHUB</a>
+    <a href="/contact/">&gt; CONTACT</a>
+  </footer>
+</div>
+<div class="bar"><span id="prt" title="PRT"></span></div>
+<script type="module" src="/prt.js"></script>
+<script>
+// "skipgc" is GoatCounter's own opt-out switch; c obeys it too
+let off=false;try{off=localStorage.getItem("skipgc")=="t"}catch{}
+const show=()=>{opt.textContent=off?"Count my visits again":"Don't count my visits";said.textContent=off?"Visits from this browser are not counted.":""}
+opt.onclick=()=>{off=!off;off?localStorage.setItem("skipgc","t"):localStorage.removeItem("skipgc");show()}
+show()
+</script>
+</body>
+</html>

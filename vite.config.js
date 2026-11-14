@@ -1,1 +1,1 @@
-export default { build: { rolldownOptions: { input: ['index.html', 'contact/index.html'] } } }
+export default { build: { rolldownOptions: { input: ['index.html', 'contact/index.html', 'privacy/index.html'] } } }
