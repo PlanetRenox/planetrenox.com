@@ -1,6 +1,6 @@
 @font-face{font-family:Monostain;src:url(https://cdn.jsdelivr.net/gh/PlanetRenox/MonostainFont@1.0/dist/Monostain-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:Monostain;src:url(https://cdn.jsdelivr.net/gh/PlanetRenox/MonostainFont@1.0/dist/Monostain-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
-:root{--bg:#fff;--fg:#000;--mute:#666;--ink:#352fc0;--sky:#7f86e6;--sun:#ff8a3d}
+:root{--bg:#fff;--fg:#000;--mute:#666;--ink:#352fc0;--sky:#7f86e6;--moon:#a4a4a4}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{
   background:var(--bg);
@@ -17,7 +17,7 @@ header{display:flex;justify-content:center}
 header img{width:112px;height:112px;display:block}
 section+section{margin-top:2.5rem}
 h2{margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
-h2::before{content:"";width:.6rem;height:.6rem;background:var(--sun)}
+h2::before{content:"";width:.6rem;height:.6rem;background:var(--moon)}
 iframe{width:100%;height:190px;border:0;display:block}
 p{line-height:1.6}
 p+p{margin-top:1rem}
@@ -28,7 +28,7 @@ main a{color:var(--ink);border-bottom:1px dotted var(--ink)}
 main a:hover,footer a:hover{background:var(--ink);color:var(--bg)}
 .row{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.5rem}
 button{font:inherit;color:var(--bg);background:var(--ink);border:0;padding:.35rem .9rem;cursor:pointer}
-button:hover{background:var(--sun)}
+button:hover{background:var(--mute)}
 footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;border-top:2px dotted var(--sky);padding-top:1.5rem}
 .bar{align-self:stretch;margin:40px -1rem 0;padding:5px 8px;border-top:.5px solid color-mix(in srgb,var(--mute),transparent 45%);font-size:14px}
 #prt{font-size:10px;color:#e6e6e6}
