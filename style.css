@@ -40,18 +40,10 @@ footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;border-top:2px dotted var(--sk
 .md>*+*{margin-top:1rem}
 .md h1{font-size:1.9rem}
 .md h2{margin-top:3.5rem}
-.md h3{margin-top:2rem;font-size:1rem}
-.md li,.md td,.md th{line-height:1.6}
-.md ul,.md ol{padding-left:1.5rem}
+.md li{line-height:1.6}
+.md ul{padding-left:1.5rem}
 .md li+li{margin-top:.5rem}
-.md code{font-family:inherit;background:#f6f6fb;padding:.1rem .3rem}
 .md blockquote{background:#f6f6fb;border-left:3px solid var(--sky);padding:1rem}
-.md img{display:block;width:100%}
-.md img+em{display:block;margin-top:.75rem;color:var(--mute);font-size:.85rem;line-height:1.6}
-.md table{width:100%;border-collapse:collapse;font-size:.85rem}
-.md th,.md td{text-align:left;vertical-align:middle;padding:.5rem .75rem .5rem 0;border-bottom:1px dotted var(--sky)}
-.md thead{display:none}
-.md td img{width:2.25rem}
 .md .mlp-block{padding:0;border-radius:0}
 .md .mlp-block text{font-family:Monostain,monospace;text-rendering:geometricPrecision}
 .md .mlp-block a:hover text{fill:var(--ink)}
